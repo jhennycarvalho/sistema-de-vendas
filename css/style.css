@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* CORES DA MARCA */
+:root {
+    --cor-primaria: #2b7cff;
+    --cor-secundaria: #1f5fcc;
+    --cor-dourado: #c59f43;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    padding: 15px 40px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo span {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.btn-login, .btn-cadastrar {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.btn-login {
+    background: #ddd;
+}
+
+.btn-cadastrar {
+    background: var(--cor-primaria);
+    color: white;
+}
+
+/* CATALOGO */
+.catalogo {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.catalogo h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+/* GRID */
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* CARD */
+.card-produto {
+    background: #fff;
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+    transition: .3s;
+}
+
+.card-produto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+}
+
+/* IMAGEM */
+.card-produto img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* PREÇOS */
+.precos {
+    margin: 10px 0;
+}
+
+.preco-atual {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.preco-antigo {
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: gray;
+}
+
+/* ESTRELAS */
+.estrelas {
+    font-size: 20px;
+    color: var(--cor-dourado);
+    margin-bottom: 15px;
+}
+
+/* BOTÃO */
+.btn-comprar {
+    width: 100%;
+    padding: 12px;
+    background: var(--cor-secundaria);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-comprar:hover {
+    background: var(--cor-primaria);
+}
