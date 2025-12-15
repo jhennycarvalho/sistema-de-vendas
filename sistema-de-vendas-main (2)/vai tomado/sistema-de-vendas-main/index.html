@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doceria do Alan - Catálogo de bolos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="img/logo_doce-removebg-preview.png" alt="Logo">
+        <span>Doceria do Alan</span>
+    </div>
+
+    <nav class="menu">
+        <a href="#">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+
+        <div class="acoes">
+            <button class="btn-login">Login</button>
+            <button class="btn-cadastrar">Cadastrar</button>
+        </div>
+    </nav>
+</header>
+
+<section class="banner">
+    <div class="banner-conteudo">
+        <h1>Doceria do Alan 🍰</h1>
+        <p>Doces feitos com amor todos os dias</p>
+    </div>
+</section>
+
+<section class="catalogo" id="produtos">
+    <h2>Catálogo de Produtos</h2>
+
+    <div class="catalogo-grid">
+
+        <div class="card-produto">
+            <img src="img/bolo de cenoura.webp" alt="Bolo de Chocolate">
+            <h3>Bolo de Chocolate</h3>
+            <div class="precos">
+                <span class="preco-atual">R$ 50,00</span>
+                <span class="preco-antigo">R$ 30,00</span>
+            </div>
+            <div class="estrelas">★★★★★</div>
+            <button class="btn-comprar" data-nome="Bolo de Chocolate" data-preco="25,00">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card-produto">
+            <img src="img/palhaitaliana.jpg" alt="Palha Italiana">
+            <h3>Palha Italiana</h3>
+            <div class="precos">
+                <span class="preco-atual">R$ 25,00</span>
+                <span class="preco-antigo">R$ 35,00</span>
+            </div>
+            <div class="estrelas">★★★★☆</div>
+            <button class="btn-comprar" data-nome="Palha Italiana" data-preco="25,00">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card-produto">
+            <img src="img/pudim.avif" alt="Bolo de Cenoura">
+            <h3>Pudim</h3>
+            <div class="precos">
+                <span class="preco-atual">R$ 18,00</span>
+                <span class="preco-antigo">R$ 25,00</span>
+            </div>
+            <div class="estrelas">★★★★☆</div>
+            <button id="btn-comprar" class="btn-comprar" data-nome="pudim" data-preco="18,00">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card-produto">
+            <img src="img/brownie.jpg" alt="brownie">
+            <h3>Brownie</h3>
+            <div class="precos">
+                <span class="preco-atual">R$ 18,00</span>
+                <span class="preco-antigo">R$ 25,00</span>
+            </div>
+            <div class="estrelas">★★★★☆</div>
+            <button class="btn-comprar" data-nome="brownie" data-preco="18,00">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card-produto">
+            <img src="img/copa da felicidade.jpg" alt="Copo da felicidade">
+            <h3>Copo da felicidade</h3>
+            <div class="precos">
+                <span class="preco-atual">R$ 18,00</span>
+                <span class="preco-antigo">R$ 25,00</span>
+            </div>
+            <div class="estrelas">★★★★☆</div>
+            <button class="btn-comprar" data-nome="Copo da felicidade" data-preco="18,00">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card-produto">
+            <img src="img/doces finos.jpg" alt="Doces Finos">
+            <h3>Doces Finos</h3>
+            <div class="precos">
+                <span class="preco-atual">R$ 18,00</span>
+                <span class="preco-antigo">R$ 25,00</span>
+            </div>
+            <div class="estrelas">★★★★☆</div>
+            <button class="btn-comprar" data-nome="Doces Finos" data-preco="18,00">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card-produto">
+            <img src="img/macaron.jpg" alt="Macarons">
+            <h3>Macarons</h3>
+            <div class="precos">
+                <span class="preco-atual">R$ 18,00</span>
+                <span class="preco-antigo">R$ 25,00</span>
+            </div>
+            <div class="estrelas">★★★★☆</div>
+            <button class="btn-comprar" data-nome="Macarons" data-preco="18,00">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card-produto">
+            <img src="img/manjar.jpg" alt="Manjar ">
+            <h3>Manjar </h3>
+            <div class="precos">
+                <span class="preco-atual">R$ 18,00</span>
+                <span class="preco-antigo">R$ 25,00</span>
+            </div>
+            <div class="estrelas">★★★★☆</div>
+            <button class="btn-comprar" data-nome="Manjar" data-preco="18,00">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="card-produto">
+            <img src="img/pipoca gurmet.jpg" alt="Pipoca Gourmet">
+            <h3>Pipoca Gourmet</h3>
+            <div class="precos">
+                <span class="preco-atual">R$ 18,00</span>
+                <span class="preco-antigo">R$ 25,00</span>
+            </div>
+            <div class="estrelas">★★★★☆</div>
+            <button class="btn-comprar" data-nome="Pipoca Gourmet" data-preco="18,00">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+        <div class="card-produto">
+            <img src="img/barca de açai.jpg" alt="Pipoca Gourmet">
+            <h3>Barca de açai</h3>
+            <div class="precos">
+                <span class="preco-atual">R$ 30,00</span>
+                <span class="preco-antigo">R$ 25,00</span>
+            </div>
+            <div class="estrelas">★★★★☆</div>
+            <button class="btn-comprar" data-nome="Pipoca Gourmet" data-preco="18,00">
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+    </div>
+</section>
+
+
+<div class="modal" id="modalCarrinho">
+    <div class="modal-content">
+        <h3 id="produtoNome"></h3>
+        <p>Foi adicionado ao carrinho!</p>
+        <div class="acoes">
+        <button class="btn-pagamento" onclick="irParaPagamento()">Ir para Pagamento</button>
+        <button class="btn-continuar" onclick="fecharCarrinho()">Continuar Comprando</button>
+    </div>
+    </div>
+</div>  
+
+
+<script>
+document.querySelectorAll('.btn-comprar').forEach(botao => {
+    botao.addEventListener('click', function () {
+        const nome = this.getAttribute('data-nome');
+        const preco = this.getAttribute('data-preco');
+
+        abrirCarrinho(nome, preco);
+    });
+});
+
+function abrirCarrinho(nome, preco) {
+    document.getElementById('produtoNome').innerText =
+        nome + ' - R$ ' + preco;
+
+    document.getElementById('modalCarrinho').style.display = 'flex';
+}
+
+function fecharCarrinho() {
+    document.getElementById('modalCarrinho').style.display = 'none';
+}
+
+function irParaPagamento() {
+    const texto = document.getElementById('produtoNome').innerText;
+    const partes = texto.split(' - R$ ');
+
+    const produto = encodeURIComponent(partes[0]);
+    const preco = encodeURIComponent(partes[1]);
+
+    window.location.href =
+        'pagamento.html?produto=' + produto + '&preco=' + preco;
+}
+</script>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>Doceria do Alan</h3>
+            <p>Bolos caseiros feitos com amor e ingredientes de qualidade.</p>
+        </div>
+
+        <div class="footer-col">
+            <h4>Menu</h4>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col" id="contato">
+            <h4>Contato</h4>
+            <p>📍 Porto Velho - RO</p>
+            <p>📞 (69) 99999-9999</p>
+            <p>📧 contato@doceriadoalan.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Doceria do Alan — Todos os direitos reservados</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+</body>
+</html>

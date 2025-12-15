@@ -1,0 +1,372 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 12px 40px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.banner {
+    width: 110%;
+    height: 200px; /* pode aumentar ou diminuir */
+
+    background-image: url("../img/Doce\ 2.gif"); /* seu gif aqui */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-conteudo {
+    background: rgba(0, 0, 0, 0.4); /* fundo escuro transparente */
+    padding: 0px 40px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.banner-conteudo h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner-conteudo p {
+    color: #fff;
+    font-size: 18px;
+}
+
+
+/*  */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;/*aqui defnimos o espaçamento entre o logo e a parte escrita */
+     height: 45px;
+}
+
+.logo img {
+    height: 45px;/*definimos a altura da logo*/
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #d22980;
+}
+
+/* aqui definimos como está organizado o menu */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #181d26;
+    position: relative;
+}
+
+/* quando passamos o mouse nos botões aparece um linha animada */
+.menu a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* Aqui definimos o lugar do botão login e cadastrar um ao lado do outro */
+.acoes {
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+}
+/*aqui definimos botões login e cadastrar*/
+.btn-login {
+    padding: 7px 14px;
+    background: transparent;
+    border: 1px solid pink;
+    color: pink;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-login:hover {
+    background: #515151;
+    color: white;
+}
+
+.btn-cadastrar {
+    padding: 8px 16px;
+    background: pink;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-cadastrar:hover {
+    background: #515151
+}
+
+
+/* CATALOGO */
+.catalogo {
+    padding-top: 10px;
+    margin-top: 90px;
+    text-align: center;
+}
+
+.catalogo h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    margin-top: 0;
+}
+
+/* GRID */
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* CARD */
+.card-produto {
+    background: #fff;
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+    transition: .3s;
+}
+
+.card-produto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+}
+
+/* IMAGEM */
+.card-produto img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* PREÇOS */
+.precos {
+    margin: 10px 0;
+}
+
+.preco-atual {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.preco-antigo {
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: gray;
+}
+
+/* ESTRELAS */
+.estrelas {
+    font-size: 20px;
+    color: rgb(207, 152, 11);
+    margin-bottom: 15px;
+}
+
+/* BOTÃO */
+.btn-comprar {
+    .button {
+  background-color: white; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+}
+
+.btn-comprar:hover {
+    background: var(--cor-primaria);
+}
+
+body {
+font-family: Arial, sans-serif;
+background: #f7f7f7;
+padding: 10px;
+width: auto;
+height: auto;
+}
+.container {
+background: #fff;
+max-width: 450px;
+margin: auto;
+padding: 25px;
+border-radius: 12px;
+box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: pink;
+    border-top: #ddd;
+}
+
+label {
+font-size: 14px;
+font-weight: bold;
+}
+input, select {
+width: 100%;
+padding: 10px;
+margin: 8px 0 15px;
+border-radius: 8px;
+border: 1px solid #ccc;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background: pink;
+    color: rgb(14, 13, 13);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+background: #000000;
+}
+
+/* MODAL DO CARRINHO */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 380px;
+    text-align: center;
+}
+
+/* BOTÕES DO MODAL */
+.modal-content button {
+    width: auto;
+    padding: 10px 18px;
+    margin: 8px 5px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* AGRUPAMENTO DOS BOTÕES */
+.modal-content .acoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* BOTÃO PAGAMENTO */
+.modal-content .btn-pagamento {
+    background: #e67e22;
+    color: white;
+}
+
+/* BOTÃO CONTINUAR */
+.modal-content .btn-continuar {
+    background: #ccc;
+    color: #333;
+}
+
+.footer {
+    background: pink;
+    color: #515151; /* cor do footer em cinza*/
+    margin-top: 60px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.footer h3, 
+.footer h4 {
+    margin-bottom: 15px;
+    color: #515151;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer ul li a {
+    color: #515151;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer ul li a:hover {
+    color: pink;
+}
+
+.footer-bottom {
+    background: pink;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+}
+
