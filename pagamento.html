@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - Doceria do Alan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>📦 Pagamento</h2>
+
+    <h3>Produto Selecionado</h3>
+    <p id="produtoSelecionado">Carregando...</p>
+
+    <hr>
+
+    <h3>Dados do Cliente</h3>
+    <label>Nome completo</label>
+    <input type="text" placeholder="Seu nome" required>
+
+    <label>Telefone</label>
+    <input type="text" placeholder="(00) 00000-0000" required>
+
+    <label>Endereço</label>
+    <input type="text" placeholder="Rua, número, bairro" required>
+
+    <hr>
+
+    <h3>Forma de Pagamento</h3>
+    <select>
+        <option>Pix</option>
+        <option>Cartão de Crédito</option>
+        <option>Cartão de Débito</option>
+        <option>Dinheiro</option>
+    </select>
+
+    <button onclick="finalizarCompra()">Finalizar Compra</button>
+</div>
+
+<script>
+// Captura o produto enviado pela URL
+document.addEventListener("DOMContentLoaded", function() {
+    const params = new URLSearchParams(window.location.search);
+    const produto = params.get("produto");
+    const preco = params.get("preco");
+
+    if (produto && preco) {
+        document.getElementById("produtoSelecionado").innerText = produto + " - R$ " + preco;
+    } else {
+        document.getElementById("produtoSelecionado").innerText = "Nenhum produto selecionado.";
+    }
+});
+
+function finalizarCompra() {
+    alert("Compra finalizada com sucesso! Obrigado pela preferência.");
+}
+</script>
+
+</body>
+</html>
