@@ -2,59 +2,42 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagamento - Doceria do Alan</title>
+    <title>Pagamento</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <div class="container">
-    <h2>📦 Pagamento</h2>
+    <h2>Pagamento</h2>
 
-    <h3>Produto Selecionado</h3>
-    <p id="produtoSelecionado">Carregando...</p>
+    <p id="produtoSelecionado"></p>
 
-    <hr>
-
-    <h3>Dados do Cliente</h3>
-    <label>Nome completo</label>
-    <input type="text" placeholder="Seu nome" required>
+    <label>Nome</label>
+    <input type="text">
 
     <label>Telefone</label>
-    <input type="text" placeholder="(00) 00000-0000" required>
+    <input type="text">
 
     <label>Endereço</label>
-    <input type="text" placeholder="Rua, número, bairro" required>
+    <input type="text">
 
-    <hr>
-
-    <h3>Forma de Pagamento</h3>
+    <label>Forma de Pagamento</label>
     <select>
         <option>Pix</option>
-        <option>Cartão de Crédito</option>
-        <option>Cartão de Débito</option>
+        <option>Cartão</option>
         <option>Dinheiro</option>
     </select>
 
-    <button onclick="finalizarCompra()">Finalizar Compra</button>
+    <button onclick="finalizar()">Finalizar Compra</button>
 </div>
 
 <script>
-// Captura o produto enviado pela URL
-document.addEventListener("DOMContentLoaded", function() {
-    const params = new URLSearchParams(window.location.search);
-    const produto = params.get("produto");
-    const preco = params.get("preco");
+const params = new URLSearchParams(window.location.search);
+document.getElementById("produtoSelecionado").innerText =
+    params.get("produto") + " - R$ " + params.get("preco");
 
-    if (produto && preco) {
-        document.getElementById("produtoSelecionado").innerText = produto + " - R$ " + preco;
-    } else {
-        document.getElementById("produtoSelecionado").innerText = "Nenhum produto selecionado.";
-    }
-});
-
-function finalizarCompra() {
-    alert("Compra finalizada com sucesso! Obrigado pela preferência.");
+function finalizar() {
+    alert("Compra finalizada com sucesso!");
 }
 </script>
 

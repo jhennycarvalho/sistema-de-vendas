@@ -15,13 +15,14 @@
 /* HEADER */
 header {
     width: 100%;
-    padding: 15px 40px;
+    padding: 8px 30px;   /* antes: 15px 40px */
     background: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
+
 
 /* LOGO */
 .logo {
@@ -31,7 +32,7 @@ header {
 }
 
 .logo span {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -43,17 +44,16 @@ nav {
 }
 
 nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
+    font-size: 14px;
+    padding: 4px 6px;
 }
 
 .btn-login, .btn-cadastrar {
-    padding: 8px 15px;
+    padding: 6px 12px;
     border: none;
     cursor: pointer;
     border-radius: 6px;
-    font-weight: 600;
+    font-size: 14px;
 }
 
 .btn-login {
@@ -187,4 +187,108 @@ cursor: pointer;
 }
 button:hover {
 background: #cf6d17;
-        }
+}
+
+/* MODAL DO CARRINHO */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 380px;
+    text-align: center;
+}
+
+/* BOTÕES DO MODAL */
+.modal-content button {
+    width: auto;
+    padding: 10px 18px;
+    margin: 8px 5px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* AGRUPAMENTO DOS BOTÕES */
+.modal-content .acoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* BOTÃO PAGAMENTO */
+.modal-content .btn-pagamento {
+    background: #e67e22;
+    color: white;
+}
+
+/* BOTÃO CONTINUAR */
+.modal-content .btn-continuar {
+    background: #ccc;
+    color: #333;
+}
+
+.footer {
+    background: #1f5fcc;
+    color: white;
+    margin-top: 60px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.footer h3, 
+.footer h4 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    background: #163e99;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+}
