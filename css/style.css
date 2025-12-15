@@ -1,28 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
-/* CORES DA MARCA */
-:root {
-    --cor-primaria: #2b7cff;
-    --cor-secundaria: #1f5fcc;
-    --cor-dourado: #c59f43;
-}
-
-/* HEADER */
-header {
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     width: 100%;
-    padding: 8px 30px;   /* antes: 15px 40px */
-    background: #fff;
+    padding: 12px 40px;
+    background: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
-
 
 /* LOGO */
 .logo {
@@ -31,43 +18,98 @@ header {
     gap: 10px;
 }
 
+.logo img {
+    height: 45px;
+}
+
 .logo span {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
+    color: #2b7cff;
 }
 
-/* NAV */
-nav {
+/* MENU */
+.menu {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 }
 
-nav a {
-    font-size: 14px;
-    padding: 4px 6px;
+.menu a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #2b7cff;
+    position: relative;
 }
 
-.btn-login, .btn-cadastrar {
-    padding: 6px 12px;
+/* LINHA ANIMADA */
+.menu a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #2b7cff;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+/* BOTÕES */
+.acoes {
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+#btn-comprar {
+    width: 100%;
+    padding: 12px;
+    background: var(--cor-secundaria);
+    color: white;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
+    transition: .3s;
+    background: rebeccapurple;
+}
+.btn-login {
+    padding: 7px 14px;
+    background: transparent;
+    border: 1px solid #2b7cff;
+    color: #2b7cff;
     border-radius: 6px;
-    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
 }
 
-.btn-login {
-    background: #ddd;
+.btn-login:hover {
+    background: #2b7cff;
+    color: white;
 }
 
 .btn-cadastrar {
-    background: var(--cor-primaria);
+    padding: 8px 16px;
+    background: #2b7cff;
     color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
 }
+
+.btn-cadastrar:hover {
+    background: #1f5fcc;
+}
+
 
 /* CATALOGO */
 .catalogo {
     padding: 50px 30px;
+    margin-top: 90px;
     text-align: center;
 }
 
@@ -127,20 +169,24 @@ nav a {
 /* ESTRELAS */
 .estrelas {
     font-size: 20px;
-    color: var(--cor-dourado);
+    color: rgb(207, 152, 11);
     margin-bottom: 15px;
 }
 
 /* BOTÃO */
 .btn-comprar {
-    width: 100%;
-    padding: 12px;
-    background: var(--cor-secundaria);
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: .3s;
+    .button {
+  background-color: white; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 }
 
 .btn-comprar:hover {
@@ -150,7 +196,9 @@ nav a {
 body {
 font-family: Arial, sans-serif;
 background: #f7f7f7;
-padding: 20px;
+padding: 10px;
+width: auto;
+height: auto;
 }
 .container {
 background: #fff;
@@ -292,3 +340,4 @@ background: #cf6d17;
     padding: 15px;
     font-size: 13px;
 }
+

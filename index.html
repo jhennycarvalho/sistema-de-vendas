@@ -8,21 +8,23 @@
 </head>
 <body>
 
-<header>
+<header class="header">
     <div class="logo">
         <img src="img/logo_doce-removebg-preview.png" alt="Logo">
-        <span>Doceria do Alan </span>
+        <span>Doceria do Alan</span>
     </div>
 
-    <nav>
+    <nav class="menu">
         <a href="#">Início</a>
         <a href="#produtos">Produtos</a>
-        <a href="#" id="contato">Contato</a>
-        <button class="btn-login">Login</button>
-        <button class="btn-cadastrar">Cadastrar</button>
+        <a href="#contato">Contato</a>
+
+        <div class="acoes">
+            <button class="btn-login">Login</button>
+            <button class="btn-cadastrar">Cadastrar</button>
+        </div>
     </nav>
 </header>
-
 <section class="catalogo" id="produtos">
     <h2>Catálogo de Produtos</h2>
 
@@ -62,7 +64,7 @@
                 <span class="preco-antigo">R$ 25,00</span>
             </div>
             <div class="estrelas">★★★★☆</div>
-            <button class="btn-comprar" data-nome="Bolo de Cenoura" data-preco="18,00">
+            <button id="btn-comprar" class="btn-comprar" data-nome="Bolo de Cenoura" data-preco="18,00">
                 Adicionar ao Carrinho
             </button>
         </div>
@@ -231,3 +233,18 @@ function irParaPagamento() {
 
 </body>
 </html>
+section/div/div[2]/div[2]
+<style>
+
+    .btn-comprar {
+    width: 100%;
+    padding: 12px;
+    background: var(--cor-secundaria);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+    background: rebeccapurple;
+}
+</style>
